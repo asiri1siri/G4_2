@@ -8,9 +8,4 @@ class Home extends BaseController
     {
         return $this->view->render('default');
     }
-
-    public function packt()
-    {
-        return $this->view->render('packt');
-    }
 }
