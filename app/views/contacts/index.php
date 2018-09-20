@@ -6,7 +6,7 @@
         <tr>
             <th>ENABLED</th>
             <th>ID</th>
-            <th>Name</th>
+            <th>NAME</th>
             <th>USERNAME</th>
             <th>USERTYPE</th>
             <th>EMAIL</th>
