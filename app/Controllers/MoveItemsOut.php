@@ -4,7 +4,7 @@ use System\BaseController;
 use App\Models\Item;
 use App\Helpers\Url;
 
-class MoveItems extends BaseController
+class MoveItemsOut extends BaseController
 {
     protected $items;
 
@@ -16,9 +16,9 @@ class MoveItems extends BaseController
 
     public function index()
     {
-        $records = $this->items->getItems();
+        $records = $this->items->getItemsWithParentID();
 
-        return $this->view->render('contacts/moveitems', compact('records'));
+        return $this->view->render('contacts/moveitemsout', compact('records'));
     }
 
     public function execute()
@@ -30,13 +30,9 @@ class MoveItems extends BaseController
         {
             foreach ($_POST['check_list'] as $entry)
             {
-                $sql = "update items set parent_id = " . $_POST['select'] . " where id = " . $entry;
-                // $conn->query($sql);
-                // array_push($dataArray, $_POST['select']);
-                // array_push($whereArray, $entry);
+                $sql = "update items set parent_id = null where id = " . $entry;
                 $this->items->execute($sql);
             }
-            // $this->items->move($dataArray, $whereArray);
         }
 
         Url::redirect('/home');
