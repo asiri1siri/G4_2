@@ -19,7 +19,7 @@ class Config {
             'db_host'     => 'localhost',
             'db_name'     => 'mini',
             'db_username' => 'root',
-            'db_password' => '',
+            'db_password' => 'password',
         ];
     }
 }
