@@ -6,7 +6,6 @@
         }
     },
     "require": {
-        "filp/whoops": "^2.1",
-        "phpmailer/phpmailer": "~6.0"
+        "filp/whoops": "^2.1"
     }
 }
