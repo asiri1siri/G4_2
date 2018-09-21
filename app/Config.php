@@ -17,9 +17,9 @@ class Config {
             //database
             'db_type'     => 'mysql',
             'db_host'     => 'localhost',
-            'db_name'     => 'mini',
+            'db_name'     => 'presdproj',
             'db_username' => 'root',
-            'db_password' => '',
+            'db_password' => 'password',
         ];
     }
 }
