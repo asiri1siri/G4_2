@@ -54,12 +54,12 @@
                 if ($row->deleted == 0)
                 {
                     echo "<td>No</td>";
-                    echo "<td><a href='/hide'>Hide</a></td>";
+                    echo "<td><a href='/hide/index/". $row->id ."'>Hide</a></td>";
                 }
                 else
                 {
                     echo "<td>Yes</td>";
-                    echo "<td><a href='/unhide'>Unhide</a></td>";
+                    echo "<td><a href='/unhide/index/". $row->id ."'>Unhide</a></td>";
                 }
                 echo "</tr>";
             }
