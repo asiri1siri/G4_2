@@ -39,7 +39,7 @@ class MoveItems extends BaseController
             // $this->items->move($dataArray, $whereArray);
         }
 
-        Url::redirect('/home');
+        Url::redirect('/mainpage');
     }
 }
 

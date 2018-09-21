@@ -35,7 +35,7 @@ class MoveItemsOut extends BaseController
             }
         }
 
-        Url::redirect('/home');
+        Url::redirect('/mainpage');
     }
 }
 
